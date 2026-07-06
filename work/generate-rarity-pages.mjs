@@ -84,7 +84,7 @@ function pageHtml(rarity, slug, count) {
           <p id="cardsNote" class="section-note">Triées par série puis numéro</p>
         </div>
 
-        <section class="controls" aria-label="Filtres de recherche">
+        <section id="filters" class="controls" aria-label="Filtres de recherche">
           <label class="search">
             <span>Recherche</span>
             <input id="searchInput" type="search" placeholder="Référence, série, display..." autocomplete="off" inputmode="search">
@@ -109,6 +109,8 @@ function pageHtml(rarity, slug, count) {
         </section>
       </section>
     </main>
+
+    <a class="mobile-filter-jump" href="#filters" aria-label="Revenir aux filtres">Filtres</a>
 
     <footer>
       <p>Remerciements : checklist initiale constituée à partir des informations publiques de Narutopia, puis localisée pour ce site.</p>
