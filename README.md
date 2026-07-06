@@ -18,7 +18,8 @@ outputs/naruto-kayou/index.html
 
 ## Deploiement GitHub Pages
 
-Le depot contient un workflow GitHub Actions qui publie automatiquement `outputs/naruto-kayou` sur GitHub Pages a chaque push sur `main`.
+Le site est publie avec GitHub Pages depuis la branche `main`.
+La racine du depot contient un `index.html` qui redirige vers le site statique dans `outputs/naruto-kayou/`.
 
 Depot GitHub prevu :
 
@@ -29,8 +30,8 @@ https://github.com/Gandolfi-G/kayoudex.git
 Dans GitHub :
 
 1. Aller dans `Settings > Pages`.
-2. Dans `Build and deployment`, choisir `GitHub Actions`.
-3. Pousser le depot sur GitHub.
+2. Dans `Build and deployment`, choisir `Deploy from a branch`.
+3. Choisir la branche `main` et le dossier `/ (root)`.
 
 Pour un nom de domaine personnalise, ajouter ensuite un fichier `CNAME` dans `outputs/naruto-kayou/` contenant le domaine.
 
