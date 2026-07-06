@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naruto Kayou - Raretés</title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Checklist sans images</p>
+        <h1>Naruto Kayou</h1>
+      </div>
+      <div class="stats" aria-label="Statistiques de la liste">
+        <span><strong id="totalCards">0</strong> cartes</span>
+        <span><strong id="visibleCards">0</strong> raretés</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="rarity-overview" aria-labelledby="rarityTitle">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Choix de la liste</p>
+            <h2 id="rarityTitle">Raretés Naruto Kayou</h2>
+          </div>
+          <p id="rarityCount" class="section-note"></p>
+        </div>
+        <div id="rarityGrid" class="rarity-grid"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Chaque rareté ouvre une page dédiée, prête pour ajouter les images sans tout charger d’un coup.</p>
+    </footer>
+
+    <script src="./data/rarities-summary.js"></script>
+    <script src="./index-app.js"></script>
+  </body>
+</html>

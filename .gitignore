@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+
+# Codex/local workspace metadata
+.agents/
+.codex/
+
+# Temporary files
+*.tmp
+*.log
+

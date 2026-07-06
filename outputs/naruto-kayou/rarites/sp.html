@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Naruto Kayou - SP</title>
+    <meta name="description" content="Liste compacte des cartes Naruto Kayou de rarete SP, avec visuels, references, series et displays.">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body data-page="rarity">
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Rarete Naruto Kayou</p>
+        <h1>SP</h1>
+      </div>
+      <div class="stats" aria-label="Statistiques de la liste">
+        <span><strong id="totalCards">92</strong> cartes</span>
+        <span><strong id="visibleCards">92</strong> affichees</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="list-panel" aria-labelledby="cardsTitle">
+        <div class="section-head">
+          <div>
+            <a class="ghost-button" href="../index.html">Toutes les raretes</a>
+            <h2 id="cardsTitle">Cartes SP</h2>
+          </div>
+          <p id="cardsNote" class="section-note">Triees par serie puis numero</p>
+        </div>
+
+        <section class="controls" aria-label="Filtres de recherche">
+          <label class="search">
+            <span>Recherche</span>
+            <input id="searchInput" type="search" placeholder="Reference, serie, display...">
+          </label>
+
+          <label>
+            <span>Serie</span>
+            <select id="seriesFilter"></select>
+          </label>
+
+          <label>
+            <span>Display</span>
+            <select id="displayFilter"></select>
+          </label>
+        </section>
+
+        <section class="cards-grid-wrap" aria-label="Liste des visuels SP">
+          <div id="cardsTable" class="visual-grid"></div>
+          <p id="emptyState" class="empty" hidden>Aucune carte ne correspond aux filtres.</p>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <p>Remerciements : checklist initiale constituee a partir des informations publiques de Narutopia, puis localisee pour ce site.</p>
+    </footer>
+
+    <script src="../data/rarities/sp.js"></script>
+    <script src="../rarity-page.js"></script>
+  </body>
+</html>
