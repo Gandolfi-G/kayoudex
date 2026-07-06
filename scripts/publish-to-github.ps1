@@ -35,5 +35,9 @@ if ($remotes -contains "origin") {
 & $gitCommand commit -m "Initial Naruto Kayou checklist site"
 & $gitCommand branch -M main
 & $gitCommand push -u origin main
+if ($LASTEXITCODE -ne 0) {
+  Write-Host "Le push a echoue. Verifie l'acces SSH GitHub puis relance le script."
+  exit $LASTEXITCODE
+}
 
 Write-Host "Depot pousse sur $remoteUrl"
