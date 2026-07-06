@@ -115,9 +115,9 @@ function displayFromReference(reference) {
 }
 
 function parseReference(line) {
-  const reference = line.match(/\b(?:[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*|[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*)\b/i)?.[0]?.trim().toUpperCase();
+  const reference = line.match(/(?:\bSS-[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*\b|\b[A-Z]{2,}\d{2}-◇[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*\b|\b[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*\b|\b[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*\b)/i)?.[0]?.trim().toUpperCase();
   if (!reference) return null;
-  const id = reference.match(/^(?:[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}|[A-Z]{1,4}-\d{1,3})/i)?.[0]?.toUpperCase();
+  const id = reference.match(/^(?:SS-[A-Z]{1,4}-\d{1,3}|[A-Z]{2,}\d{2}-◇[A-Z]{1,4}-\d{1,3}|[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}|[A-Z]{1,4}-\d{1,3})/i)?.[0]?.toUpperCase();
   return id ? { id, reference } : null;
 }
 
@@ -138,29 +138,44 @@ function isValidCardReference(reference) {
 }
 
 function collectorReference(card, image) {
-  const match = image.image.match(/\/SS-([A-Z]+)-(\d+)(?:-|\.webp)/i);
+  const referenceMatch = String(card.reference || card.id).match(/^SS-([A-Z]+)-(\d{1,3})(?:-(.+))?$/i);
+  const imageMatch = image.image.match(/\/(?:NR)?SS-([A-Z]+)-(\d+)(?:-|\.webp)/i);
+  const match = referenceMatch || imageMatch;
   if (!match) return card;
   const rarity = match[1].toUpperCase();
   const number = match[2].padStart(3, "0");
-  const suffix = String(card.reference || card.id).match(new RegExp(`^${rarity}-\\d{1,3}-(.+)$`, "i"))?.[1] || "";
+  const suffix = referenceMatch?.[3]
+    || String(card.reference || card.id).match(new RegExp(`^${rarity}-\\d{1,3}-(.+)$`, "i"))?.[1]
+    || "";
   const id = `SS-${rarity}-${number}`;
+  const display = rarity === "UR" && Number(number) >= 6 ? "Collector Nouvel An" : "Collector Noir-Dore";
   return {
     ...card,
     id,
     reference: suffix ? `${id}-${suffix}` : id,
-    display: card.display || "Collector Noir-Dore",
+    display,
   };
 }
 
 function specialImageReference(card, image) {
   const aspDiamond = image.image.match(/\/NRZ08-◇ASP-(\d+)(?:-|\.webp)/i);
-  if (!aspDiamond) return card;
-  const id = `NRZ08-◇ASP-${aspDiamond[1].padStart(3, "0")}`;
+  if (aspDiamond) {
+    const id = `NRZ08-◇ASP-${aspDiamond[1].padStart(3, "0")}`;
+    return {
+      ...card,
+      id,
+      reference: id,
+      display: "10 Yuan - ASP losange",
+    };
+  }
+  const diamond = String(card.reference || card.id).match(/^(NR[BZ]\d{2})-◇([A-Z]{1,4})-(\d{1,3})/i);
+  if (!diamond) return card;
+  const id = `${diamond[1].toUpperCase()}-◇${diamond[2].toUpperCase()}-${diamond[3].padStart(3, "0")}`;
   return {
     ...card,
     id,
     reference: id,
-    display: "10 Yuan - ASP losange",
+    display: `${displayFromReference(id)} - Alternative`,
   };
 }
 
@@ -198,7 +213,7 @@ function extractCards(lines, rarity, source) {
   let currentSection = {};
 
   for (const line of lines) {
-    const section = line.match(/Serie\s+(\d+)\s+Yuan\s+(\d+)/i);
+    const section = line.match(/S[ée]rie\s+(\d+)\s+Yuan\s+(\d+)/i);
     if (section) {
       currentSection = {
         series: `Serie ${section[1]}`,
@@ -210,7 +225,7 @@ function extractCards(lines, rarity, source) {
     const parsed = parseReference(line);
     const id = parsed?.id;
     const reference = parsed?.reference;
-    const series = line.match(/Serie\s+\d+/i)?.[0];
+    const series = line.match(/S[ée]rie\s+\d+/i)?.[0]?.replace(/^Série/i, "Serie");
 
     if (reference && !isValidCardReference(reference)) continue;
 
@@ -278,14 +293,19 @@ function extractCards(lines, rarity, source) {
 
 function mergeCards(textCards, imageCards) {
   const cardsByReference = new Map();
-  const textIds = new Set(textCards.map((card) => card.id));
+  const textIds = new Set(textCards.flatMap((card) => [
+    card.id,
+    card.reference,
+    normalizedReferenceKey(card.id),
+    normalizedReferenceKey(card.reference),
+  ].filter(Boolean)));
 
   for (const card of textCards) {
     cardsByReference.set(card.reference || card.id, card);
   }
 
   for (const card of imageCards) {
-    if (textIds.has(card.id)) continue;
+    if (textIds.has(card.id) || textIds.has(card.reference) || textIds.has(normalizedReferenceKey(card.id)) || textIds.has(normalizedReferenceKey(card.reference))) continue;
     cardsByReference.set(card.reference || card.id, card);
   }
 

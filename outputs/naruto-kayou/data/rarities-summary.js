@@ -30,7 +30,7 @@ window.NARUTO_KAYOU_RARITIES = [
   {
     "rarity": "HR",
     "slug": "hr",
-    "count": 220,
+    "count": 240,
     "seriesCount": 6,
     "href": "./rarites/hr.html"
   },
@@ -44,7 +44,7 @@ window.NARUTO_KAYOU_RARITIES = [
   {
     "rarity": "UR",
     "slug": "ur",
-    "count": 216,
+    "count": 227,
     "seriesCount": 10,
     "href": "./rarites/ur.html"
   },
