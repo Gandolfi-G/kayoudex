@@ -1,6 +1,6 @@
 $ErrorActionPreference = "Stop"
 
-$remoteUrl = "git@github.com:Gandolfi-G/kayoudex.git"
+$remoteUrl = "https://github.com/Gandolfi-G/kayoudex.git"
 
 $gitExecutable = Get-Command git -ErrorAction SilentlyContinue
 $gitCommand = $null

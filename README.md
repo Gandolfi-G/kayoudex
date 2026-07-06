@@ -23,7 +23,7 @@ Le depot contient un workflow GitHub Actions qui publie automatiquement `outputs
 Depot GitHub prevu :
 
 ```text
-git@github.com:Gandolfi-G/kayoudex.git
+https://github.com/Gandolfi-G/kayoudex.git
 ```
 
 Dans GitHub :
