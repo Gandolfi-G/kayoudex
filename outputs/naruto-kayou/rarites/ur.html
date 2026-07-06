@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naruto Kayou - UR</title>
-    <meta name="description" content="Liste compacte des cartes Naruto Kayou de rarete UR, avec visuels, references, series et displays.">
+    <meta name="description" content="Liste compacte des cartes Naruto Kayou de rareté UR, avec visuels, références, séries et displays.">
     <link rel="stylesheet" href="../styles.css">
   </head>
   <body data-page="rarity">
     <header class="topbar">
       <div>
-        <p class="eyebrow">Rarete Naruto Kayou</p>
+        <p class="eyebrow">Rareté Naruto Kayou</p>
         <h1>UR</h1>
       </div>
       <div class="stats" aria-label="Statistiques de la liste">
         <span><strong id="totalCards">216</strong> cartes</span>
-        <span><strong id="visibleCards">216</strong> affichees</span>
+        <span><strong id="visibleCards">216</strong> affichées</span>
       </div>
     </header>
 
@@ -23,20 +23,20 @@
       <section class="list-panel" aria-labelledby="cardsTitle">
         <div class="section-head">
           <div>
-            <a class="ghost-button" href="../index.html">Toutes les raretes</a>
+            <a class="ghost-button" href="../index.html">Toutes les raretés</a>
             <h2 id="cardsTitle">Cartes UR</h2>
           </div>
-          <p id="cardsNote" class="section-note">Triees par serie puis numero</p>
+          <p id="cardsNote" class="section-note">Triées par série puis numéro</p>
         </div>
 
         <section class="controls" aria-label="Filtres de recherche">
           <label class="search">
             <span>Recherche</span>
-            <input id="searchInput" type="search" placeholder="Reference, serie, display...">
+            <input id="searchInput" type="search" placeholder="Référence, série, display..." autocomplete="off" inputmode="search">
           </label>
 
           <label>
-            <span>Serie</span>
+            <span>Série</span>
             <select id="seriesFilter"></select>
           </label>
 
@@ -44,6 +44,8 @@
             <span>Display</span>
             <select id="displayFilter"></select>
           </label>
+
+          <button id="clearFilters" class="filter-reset" type="button" disabled>Réinitialiser</button>
         </section>
 
         <section class="cards-grid-wrap" aria-label="Liste des visuels UR">
@@ -54,7 +56,7 @@
     </main>
 
     <footer>
-      <p>Remerciements : checklist initiale constituee a partir des informations publiques de Narutopia, puis localisee pour ce site.</p>
+      <p>Remerciements : checklist initiale constituée à partir des informations publiques de Narutopia, puis localisée pour ce site.</p>
     </footer>
 
     <script src="../data/rarities/ur.js"></script>

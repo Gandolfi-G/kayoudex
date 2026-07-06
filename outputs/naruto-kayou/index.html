@@ -4,12 +4,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naruto Kayou - Raretés</title>
+    <meta name="description" content="Liste indépendante des raretés Naruto Kayou avec pages dédiées, visuels légers et filtres par série.">
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
     <header class="topbar">
       <div>
-        <p class="eyebrow">Checklist sans images</p>
+        <p class="eyebrow">Checklist visuelle</p>
         <h1>Naruto Kayou</h1>
       </div>
       <div class="stats" aria-label="Statistiques de la liste">
@@ -27,12 +28,21 @@
           </div>
           <p id="rarityCount" class="section-note"></p>
         </div>
+
+        <div class="home-toolbar" aria-label="Recherche de rareté">
+          <label class="search">
+            <span>Recherche</span>
+            <input id="raritySearch" type="search" placeholder="R, SSR, OR..." autocomplete="off" inputmode="search">
+          </label>
+        </div>
+
         <div id="rarityGrid" class="rarity-grid"></div>
+        <p id="emptyState" class="empty" hidden>Aucune rareté ne correspond à cette recherche.</p>
       </section>
     </main>
 
     <footer>
-      <p>Chaque rareté ouvre une page dédiée, prête pour ajouter les images sans tout charger d’un coup.</p>
+      <p>Chaque rareté ouvre une page dédiée pour garder le site rapide, même avec les visuels.</p>
     </footer>
 
     <script src="./data/rarities-summary.js"></script>

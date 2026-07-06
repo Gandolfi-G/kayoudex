@@ -6,6 +6,7 @@
   const searchInput = document.querySelector("#searchInput");
   const seriesFilter = document.querySelector("#seriesFilter");
   const displayFilter = document.querySelector("#displayFilter");
+  const clearFilters = document.querySelector("#clearFilters");
 
   function escapeHtml(value) {
     return String(value)
@@ -14,6 +15,13 @@
       .replaceAll(">", "&gt;")
       .replaceAll('"', "&quot;")
       .replaceAll("'", "&#039;");
+  }
+
+  function normalizeText(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
   }
 
   function uniqueValues(key) {
@@ -28,10 +36,7 @@
 
   function matchesSearch(card, query) {
     if (!query) return true;
-    return [card.reference, card.id, card.rarity, card.series, card.display, card.type]
-      .join(" ")
-      .toLowerCase()
-      .includes(query.toLowerCase());
+    return normalizeText([card.reference, card.id, card.rarity, card.series, card.display, card.type, card.imageAlt].join(" ")).includes(query);
   }
 
   function orientationClass(card) {
@@ -41,7 +46,7 @@
   }
 
   function render() {
-    const query = searchInput.value.trim();
+    const query = normalizeText(searchInput.value.trim());
     const series = seriesFilter.value;
     const display = displayFilter.value;
     const filtered = cards.filter((card) => {
@@ -79,10 +84,18 @@
 
     visibleCards.textContent = filtered.length;
     emptyState.hidden = filtered.length > 0;
+    clearFilters.disabled = !searchInput.value.trim() && !series && !display;
   }
 
   fillSelect(seriesFilter, "Toutes les séries", uniqueValues("series"));
   fillSelect(displayFilter, "Tous les displays", uniqueValues("display"));
   [searchInput, seriesFilter, displayFilter].forEach((control) => control.addEventListener("input", render));
+  clearFilters.addEventListener("click", () => {
+    searchInput.value = "";
+    seriesFilter.value = "";
+    displayFilter.value = "";
+    render();
+    searchInput.focus();
+  });
   render();
 })();
