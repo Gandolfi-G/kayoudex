@@ -16771,7 +16771,7 @@ window.NARUTO_KAYOU_CARDS = [
   },
   {
     "id": "SLR-001",
-    "reference": "SLR-001-NARUTO",
+    "reference": "SLR-001-NARUTO-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16780,11 +16780,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-001-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-001.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-001-NARUTO rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-001-NARUTO-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-001",
+    "reference": "SLR-001-NARUTO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-001-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-001.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-001-NARUTO-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-002",
-    "reference": "SLR-002-SASUKE",
+    "reference": "SLR-002-SASUKE-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16793,11 +16806,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-002-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-002.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-002-SASUKE rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-002-SASUKE-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-002",
+    "reference": "SLR-002-SASUKE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-002-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-002.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-002-SASUKE-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-003",
-    "reference": "SLR-003-SAKURA",
+    "reference": "SLR-003-SAKURA-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16806,11 +16832,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-003-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-003.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-003-SAKURA rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-003-SAKURA-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-003",
+    "reference": "SLR-003-SAKURA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-003-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-003.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-003-SAKURA-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-004",
-    "reference": "SLR-004-GAARA",
+    "reference": "SLR-004-GAARA-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16819,11 +16858,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-004-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-004.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-004-GAARA rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-004-GAARA-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-004",
+    "reference": "SLR-004-GAARA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-004-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-004.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-004-GAARA-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-005",
-    "reference": "SLR-005-KAKASHI",
+    "reference": "SLR-005-KAKASHI-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16832,11 +16884,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-005-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-005.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-005-KAKASHI rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-005-KAKASHI-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-005",
+    "reference": "SLR-005-KAKASHI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-005-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-005.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-005-KAKASHI-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-006",
-    "reference": "SLR-006-ITACHI",
+    "reference": "SLR-006-ITACHI-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16845,11 +16910,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-006-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-006.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-006-ITACHI rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-006-ITACHI-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-006",
+    "reference": "SLR-006-ITACHI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-006-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-006.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-006-ITACHI-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-007",
-    "reference": "SLR-007-GA",
+    "reference": "SLR-007-GAÏ-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16858,11 +16936,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-007-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-007.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-007-GA rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-007-GAÏ-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-007",
+    "reference": "SLR-007-GAÏ-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-007-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-007.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-007-GAÏ-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-008",
-    "reference": "SLR-008-LEE",
+    "reference": "SLR-008-LEE-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16871,11 +16962,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-008-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-008.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-008-LEE rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-008-LEE-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-008",
+    "reference": "SLR-008-LEE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-008-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-008.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-008-LEE-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-009",
-    "reference": "SLR-009-SHIKAMARU",
+    "reference": "SLR-009-SHIKAMARU-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16884,11 +16988,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-009-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-009.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-009-SHIKAMARU rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-009-SHIKAMARU-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-009",
+    "reference": "SLR-009-SHIKAMARU-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-009-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-009.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-009-SHIKAMARU-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-010",
-    "reference": "SLR-010-TSUNADE",
+    "reference": "SLR-010-TSUNADE-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16897,11 +17014,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-010-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-010.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-010-TSUNADE rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-010-TSUNADE-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-010",
+    "reference": "SLR-010-TSUNADE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-010-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-010.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-010-TSUNADE-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-011",
-    "reference": "SLR-011-SA",
+    "reference": "SLR-011-SAÏ-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16910,11 +17040,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-011-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-011.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-011-SA rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-011-SAÏ-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-011",
+    "reference": "SLR-011-SAÏ-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-011-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-011.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-011-SAÏ-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-012",
-    "reference": "SLR-012-TEMARI",
+    "reference": "SLR-012-TEMARI-BLACK",
     "rarity": "SLR",
     "series": "Serie 1",
     "display": "",
@@ -16923,11 +17066,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-012-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-012.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-012-TEMARI rarete SLR Serie 1"
+    "imageAlt": "Carte Naruto Kayou SLR-012-TEMARI-BLACK rarete SLR Serie 1"
+  },
+  {
+    "id": "SLR-012",
+    "reference": "SLR-012-TEMARI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 1",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-012-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-012.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-012-TEMARI-WHITE rarete SLR Serie 1"
   },
   {
     "id": "SLR-013",
-    "reference": "SLR-013-KAKASHI",
+    "reference": "SLR-013-KAKASHI-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -16936,11 +17092,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-013-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-013.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-013-KAKASHI rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-013-KAKASHI-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-013",
+    "reference": "SLR-013-KAKASHI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-013-2-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-013-2.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-013-KAKASHI-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-014",
-    "reference": "SLR-014-NARUTO",
+    "reference": "SLR-014-NARUTO-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -16949,11 +17118,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-014-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-014.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-014-NARUTO rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-014-NARUTO-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-014",
+    "reference": "SLR-014-NARUTO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-014-2-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-014-2.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-014-NARUTO-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-015",
-    "reference": "SLR-015-SAKURA",
+    "reference": "SLR-015-SAKURA-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -16962,11 +17144,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-015-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-015.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-015-SAKURA rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-015-SAKURA-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-015",
+    "reference": "SLR-015-SAKURA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-015-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-015.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-015-SAKURA-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-016",
-    "reference": "SLR-016-SASUKE",
+    "reference": "SLR-016-SASUKE-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -16975,11 +17170,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-016-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-016.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-016-SASUKE rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-016-SASUKE-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-016",
+    "reference": "SLR-016-SASUKE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-016-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-016.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-016-SASUKE-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-017",
-    "reference": "SLR-017-GA",
+    "reference": "SLR-017-GAÏ-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -16988,11 +17196,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-017-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-017.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-017-GA rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-017-GAÏ-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-017",
+    "reference": "SLR-017-GAÏ-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-017-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-017.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-017-GAÏ-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-018",
-    "reference": "SLR-018-HINATA",
+    "reference": "SLR-018-HINATA-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17001,11 +17222,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-018-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-018.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-018-HINATA rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-018-HINATA-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-018",
+    "reference": "SLR-018-HINATA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-018-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-018.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-018-HINATA-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-019",
-    "reference": "SLR-019-KIBA",
+    "reference": "SLR-019-KIBA-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17014,11 +17248,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-019-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-019.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-019-KIBA rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-019-KIBA-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-019",
+    "reference": "SLR-019-KIBA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-019-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-019.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-019-KIBA-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-020",
-    "reference": "SLR-020-NEJI",
+    "reference": "SLR-020-NEJI-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17027,11 +17274,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-020-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-020.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-020-NEJI rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-020-NEJI-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-020",
+    "reference": "SLR-020-NEJI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-020-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-020.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-020-NEJI-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-021",
-    "reference": "SLR-021-CHOJI",
+    "reference": "SLR-021-CHOJI-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17040,11 +17300,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-021-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-021.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-021-CHOJI rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-021-CHOJI-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-021",
+    "reference": "SLR-021-CHOJI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-021-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-021.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-021-CHOJI-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-022",
-    "reference": "SLR-022-MINATO",
+    "reference": "SLR-022-MINATO-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17053,11 +17326,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-022-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-022.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-022-MINATO rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-022-MINATO-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-022",
+    "reference": "SLR-022-MINATO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-022-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-022.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-022-MINATO-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-023",
-    "reference": "SLR-023-JIRAYA",
+    "reference": "SLR-023-JIRAYA-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17066,11 +17352,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-023-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-023.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-023-JIRAYA rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-023-JIRAYA-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-023",
+    "reference": "SLR-023-JIRAYA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-023-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-023.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-023-JIRAYA-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-024",
-    "reference": "SLR-024-OROCHIMARU",
+    "reference": "SLR-024-OROCHIMARU-BLACK",
     "rarity": "SLR",
     "series": "Serie 2",
     "display": "",
@@ -17079,11 +17378,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-024-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-024.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-024-OROCHIMARU rarete SLR Serie 2"
+    "imageAlt": "Carte Naruto Kayou SLR-024-OROCHIMARU-BLACK rarete SLR Serie 2"
+  },
+  {
+    "id": "SLR-024",
+    "reference": "SLR-024-OROCHIMARU-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 2",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-024-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-024.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-024-OROCHIMARU-WHITE rarete SLR Serie 2"
   },
   {
     "id": "SLR-025",
-    "reference": "SLR-025-YAMATO",
+    "reference": "SLR-025-YAMATO-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17092,11 +17404,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-025-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-025.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-025-YAMATO rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-025-YAMATO-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-025",
+    "reference": "SLR-025-YAMATO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-025-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-025.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-025-YAMATO-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-026",
-    "reference": "SLR-026-OROCHIMARU",
+    "reference": "SLR-026-OROCHIMARU-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17105,11 +17430,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-026-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-026.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-026-OROCHIMARU rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-026-OROCHIMARU-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-026",
+    "reference": "SLR-026-OROCHIMARU-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-026-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-026.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-026-OROCHIMARU-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-027",
-    "reference": "SLR-027-TSUNADE",
+    "reference": "SLR-027-TSUNADE-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17118,11 +17456,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-027-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-027.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-027-TSUNADE rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-027-TSUNADE-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-027",
+    "reference": "SLR-027-TSUNADE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-027-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-027.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-027-TSUNADE-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-028",
-    "reference": "SLR-028-LEE",
+    "reference": "SLR-028-LEE-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17131,11 +17482,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-028-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-028.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-028-LEE rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-028-LEE-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-028",
+    "reference": "SLR-028-LEE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-028-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-028.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-028-LEE-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-029",
-    "reference": "SLR-029-NEJI",
+    "reference": "SLR-029-NEJI-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17144,11 +17508,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-029-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-029.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-029-NEJI rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-029-NEJI-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-029",
+    "reference": "SLR-029-NEJI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-029-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-029.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-029-NEJI-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-030",
-    "reference": "SLR-030-KIBA",
+    "reference": "SLR-030-KIBA-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17157,11 +17534,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-030-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-030.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-030-KIBA rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-030-KIBA-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-030",
+    "reference": "SLR-030-KIBA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-030-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-030.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-030-KIBA-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-031",
-    "reference": "SLR-031-SAKURA",
+    "reference": "SLR-031-SAKURA-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17170,11 +17560,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-031-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-031.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-031-SAKURA rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-031-SAKURA-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-031",
+    "reference": "SLR-031-SAKURA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-031-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-031.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-031-SAKURA-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-032",
-    "reference": "SLR-032-BORUTO",
+    "reference": "SLR-032-BORUTO-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17183,11 +17586,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-032-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-032.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-032-BORUTO rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-032-BORUTO-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-032",
+    "reference": "SLR-032-BORUTO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-032-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-032.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-032-BORUTO-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-033",
-    "reference": "SLR-033-NARUTO",
+    "reference": "SLR-033-NARUTO-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17196,11 +17612,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-033-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-033.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-033-NARUTO rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-033-NARUTO-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-033",
+    "reference": "SLR-033-NARUTO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-033-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-033.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-033-NARUTO-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-034",
-    "reference": "SLR-034-IRUKA",
+    "reference": "SLR-034-IRUKA-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17209,11 +17638,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-034-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-034.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-034-IRUKA rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-034-IRUKA-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-034",
+    "reference": "SLR-034-IRUKA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-034-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-034.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-034-IRUKA-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-035",
-    "reference": "SLR-035-SARADA",
+    "reference": "SLR-035-SARADA-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17222,11 +17664,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-035-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-035.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-035-SARADA rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-035-SARADA-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-035",
+    "reference": "SLR-035-SARADA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-035-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-035.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-035-SARADA-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-036",
-    "reference": "SLR-036-SASUKE",
+    "reference": "SLR-036-SASUKE-BLACK",
     "rarity": "SLR",
     "series": "Serie 3",
     "display": "",
@@ -17235,11 +17690,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-036-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-036.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-036-SASUKE rarete SLR Serie 3"
+    "imageAlt": "Carte Naruto Kayou SLR-036-SASUKE-BLACK rarete SLR Serie 3"
+  },
+  {
+    "id": "SLR-036",
+    "reference": "SLR-036-SASUKE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 3",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-036-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-036.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-036-SASUKE-WHITE rarete SLR Serie 3"
   },
   {
     "id": "SLR-037",
-    "reference": "SLR-037-HAKU",
+    "reference": "SLR-037-HAKU-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17248,11 +17716,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-037-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-037.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-037-HAKU rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-037-HAKU-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-037",
+    "reference": "SLR-037-HAKU-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-037-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-037.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-037-HAKU-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-038",
-    "reference": "SLR-038-HINATA",
+    "reference": "SLR-038-HINATA-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17261,11 +17742,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-038-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-038.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-038-HINATA rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-038-HINATA-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-038",
+    "reference": "SLR-038-HINATA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-038-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-038.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-038-HINATA-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-039",
-    "reference": "SLR-039-OBITO",
+    "reference": "SLR-039-OBITO-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17274,11 +17768,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-039-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-039.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-039-OBITO rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-039-OBITO-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-039",
+    "reference": "SLR-039-OBITO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-039-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-039.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-039-OBITO-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-040",
-    "reference": "SLR-040-INO",
+    "reference": "SLR-040-INO-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17287,11 +17794,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-040-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-040.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-040-INO rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-040-INO-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-040",
+    "reference": "SLR-040-INO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-040-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-040.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-040-INO-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-041",
-    "reference": "SLR-041-NARUTO",
+    "reference": "SLR-041-NARUTO-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17300,11 +17820,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-041-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-041.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-041-NARUTO rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-041-NARUTO-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-041",
+    "reference": "SLR-041-NARUTO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-041-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-041.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-041-NARUTO-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-042",
-    "reference": "SLR-042-SAKURA",
+    "reference": "SLR-042-SAKURA-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17313,11 +17846,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-042-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-042.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-042-SAKURA rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-042-SAKURA-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-042",
+    "reference": "SLR-042-SAKURA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-042-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-042.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-042-SAKURA-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-043",
-    "reference": "SLR-043-JIRAYA",
+    "reference": "SLR-043-JIRAYA-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17326,11 +17872,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-043-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-043.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-043-JIRAYA rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-043-JIRAYA-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-043",
+    "reference": "SLR-043-JIRAYA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-043-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-043.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-043-JIRAYA-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-044",
-    "reference": "SLR-044-SASUKE",
+    "reference": "SLR-044-SASUKE-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17339,11 +17898,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-044-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-044.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-044-SASUKE rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-044-SASUKE-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-044",
+    "reference": "SLR-044-SASUKE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-044-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-044.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-044-SASUKE-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-045",
-    "reference": "SLR-045-JIRAYA",
+    "reference": "SLR-045-JIRAYA-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17352,11 +17924,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-045-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-045.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-045-JIRAYA rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-045-JIRAYA-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-045",
+    "reference": "SLR-045-JIRAYA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-045-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-045.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-045-JIRAYA-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-046",
-    "reference": "SLR-046-HIMAWARI",
+    "reference": "SLR-046-HIMAWARI-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17365,11 +17950,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-046-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-046.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-046-HIMAWARI rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-046-HIMAWARI-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-046",
+    "reference": "SLR-046-HIMAWARI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-046-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-046.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-046-HIMAWARI-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-047",
-    "reference": "SLR-047-MITSUKI",
+    "reference": "SLR-047-MITSUKI-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17378,11 +17976,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-047-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-047.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-047-MITSUKI rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-047-MITSUKI-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-047",
+    "reference": "SLR-047-MITSUKI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-047-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-047.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-047-MITSUKI-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-048",
-    "reference": "SLR-048-SHIKADAI",
+    "reference": "SLR-048-SHIKADAI-BLACK",
     "rarity": "SLR",
     "series": "Serie 4",
     "display": "",
@@ -17391,11 +18002,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-048-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-048.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-048-SHIKADAI rarete SLR Serie 4"
+    "imageAlt": "Carte Naruto Kayou SLR-048-SHIKADAI-BLACK rarete SLR Serie 4"
+  },
+  {
+    "id": "SLR-048",
+    "reference": "SLR-048-SHIKADAI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 4",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-048-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-048.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-048-SHIKADAI-WHITE rarete SLR Serie 4"
   },
   {
     "id": "SLR-049",
-    "reference": "SLR-049-HINATA",
+    "reference": "SLR-049-HINATA-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17404,11 +18028,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-049-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-049.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-049-HINATA rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-049-HINATA-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-049",
+    "reference": "SLR-049-HINATA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-049-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-049.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-049-HINATA-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-050",
-    "reference": "SLR-050-CHÔJI",
+    "reference": "SLR-050-CHÔJI-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17417,11 +18054,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-050-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-050.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-050-CHÔJI rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-050-CHÔJI-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-050",
+    "reference": "SLR-050-CHÔJI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-050-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-050.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-050-CHÔJI-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-051",
-    "reference": "SLR-051-INO",
+    "reference": "SLR-051-INO-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17430,11 +18080,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-051-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-051.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-051-INO rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-051-INO-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-051",
+    "reference": "SLR-051-INO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-051-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-051.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-051-INO-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-052",
-    "reference": "SLR-052-NARUTO",
+    "reference": "SLR-052-NARUTO-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17443,11 +18106,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-052-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-052.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-052-NARUTO rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-052-NARUTO-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-052",
+    "reference": "SLR-052-NARUTO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-052-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-052.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-052-NARUTO-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-053",
-    "reference": "SLR-053-NEJI",
+    "reference": "SLR-053-NEJI-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17456,11 +18132,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-053-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-053.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-053-NEJI rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-053-NEJI-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-053",
+    "reference": "SLR-053-NEJI-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-053-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-053.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-053-NEJI-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-054",
-    "reference": "SLR-054-KIBA",
+    "reference": "SLR-054-KIBA-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17469,11 +18158,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-054-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-054.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-054-KIBA rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-054-KIBA-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-054",
+    "reference": "SLR-054-KIBA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-054-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-054.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-054-KIBA-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-055",
-    "reference": "SLR-055-TENTEN",
+    "reference": "SLR-055-TENTEN-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17482,11 +18184,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-055-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-055.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-055-TENTEN rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-055-TENTEN-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-055",
+    "reference": "SLR-055-TENTEN-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-055-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-055.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-055-TENTEN-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-056",
-    "reference": "SLR-056-KONAN",
+    "reference": "SLR-056-KONAN-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17495,11 +18210,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-056-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-056.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-056-KONAN rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-056-KONAN-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-056",
+    "reference": "SLR-056-KONAN-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-056-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-056.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-056-KONAN-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-057",
-    "reference": "SLR-057-SAKURA",
+    "reference": "SLR-057-SAKURA-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17508,11 +18236,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-057-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-057.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-057-SAKURA rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-057-SAKURA-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-057",
+    "reference": "SLR-057-SAKURA-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-057-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-057.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-057-SAKURA-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-058",
-    "reference": "SLR-058-SHINO",
+    "reference": "SLR-058-SHINO-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17521,11 +18262,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-058-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-058.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-058-SHINO rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-058-SHINO-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-058",
+    "reference": "SLR-058-SHINO-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-058-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-058.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-058-SHINO-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-059",
-    "reference": "SLR-059-LEE",
+    "reference": "SLR-059-LEE-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17534,11 +18288,24 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-059-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-059.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-059-LEE rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-059-LEE-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-059",
+    "reference": "SLR-059-LEE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-059-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-059.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-059-LEE-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SLR-060",
-    "reference": "SLR-060-SASUKE",
+    "reference": "SLR-060-SASUKE-BLACK",
     "rarity": "SLR",
     "series": "Serie 5",
     "display": "",
@@ -17547,7 +18314,20 @@ window.NARUTO_KAYOU_CARDS = [
     "source": "https://narutopia.fr/slr-naruto-kayou",
     "image": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-060-213x300.webp",
     "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/BLACK-060.webp",
-    "imageAlt": "Carte Naruto Kayou SLR-060-SASUKE rarete SLR Serie 5"
+    "imageAlt": "Carte Naruto Kayou SLR-060-SASUKE-BLACK rarete SLR Serie 5"
+  },
+  {
+    "id": "SLR-060",
+    "reference": "SLR-060-SASUKE-WHITE",
+    "rarity": "SLR",
+    "series": "Serie 5",
+    "display": "",
+    "name": "",
+    "type": "Carte",
+    "source": "https://narutopia.fr/slr-naruto-kayou",
+    "image": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-060-213x300.webp",
+    "fullImage": "https://narutopia.fr/wp-content/uploads/2024/09/WHITE-060.webp",
+    "imageAlt": "Carte Naruto Kayou SLR-060-SASUKE-WHITE rarete SLR Serie 5"
   },
   {
     "id": "SP-001",

@@ -194,7 +194,7 @@ main {
 
 .controls {
   display: grid;
-  grid-template-columns: minmax(220px, 1.5fr) minmax(150px, 0.85fr) minmax(150px, 0.85fr) auto;
+  grid-template-columns: minmax(220px, 1.5fr) repeat(3, minmax(140px, 0.85fr)) auto;
   align-items: end;
   gap: 12px;
   position: sticky;
@@ -260,8 +260,116 @@ select:focus {
   opacity: 0.45;
 }
 
-.mobile-filter-jump {
-  display: none;
+.secondary-button {
+  min-height: 40px;
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--accent-2);
+  font: inherit;
+  font-size: 0.84rem;
+  font-weight: 850;
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+.filter-jump {
+  position: fixed;
+  right: 18px;
+  bottom: max(18px, env(safe-area-inset-bottom));
+  z-index: 20;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 92px;
+  min-height: 46px;
+  padding: 0 16px;
+  border: 1px solid rgba(16, 24, 32, 0.18);
+  border-radius: 999px;
+  background: #101820;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(16, 24, 32, 0.22);
+  font-size: 0.9rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+
+.collection-panel {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 0 0 16px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+}
+
+.collection-count {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: baseline;
+  min-height: 40px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 760;
+}
+
+.collection-count strong {
+  color: #157347;
+  font-size: 1.25rem;
+}
+
+.backup-panel {
+  min-width: min(100%, 520px);
+}
+
+.backup-panel summary {
+  min-height: 40px;
+  color: var(--accent-2);
+  cursor: pointer;
+  font-size: 0.86rem;
+  font-weight: 850;
+  list-style-position: inside;
+}
+
+.backup-grid {
+  display: grid;
+  gap: 10px;
+  padding-top: 8px;
+}
+
+textarea {
+  width: 100%;
+  min-height: 82px;
+  resize: vertical;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  font: inherit;
+  padding: 10px 12px;
+}
+
+textarea:focus {
+  outline: 3px solid rgba(31, 111, 139, 0.18);
+  border-color: var(--accent-2);
+}
+
+.backup-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.backup-status {
+  min-height: 1.2em;
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 720;
 }
 
 .table-wrap {
@@ -288,6 +396,13 @@ select:focus {
   min-width: 0;
   content-visibility: auto;
   contain-intrinsic-size: 180px 245px;
+}
+
+.visual-card.is-owned {
+  padding: 8px;
+  border: 1px solid rgba(21, 115, 71, 0.28);
+  border-radius: 8px;
+  background: #eaf7ef;
 }
 
 .visual-card.is-landscape {
@@ -321,6 +436,27 @@ select:focus {
   display: grid;
   gap: 5px;
   padding-top: 8px;
+}
+
+.card-owned-toggle {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: fit-content;
+  min-height: 34px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 850;
+  cursor: pointer;
+}
+
+.card-owned-toggle input {
+  width: 18px;
+  min-width: 18px;
+  height: 18px;
+  min-height: 18px;
+  accent-color: #157347;
+  cursor: pointer;
 }
 
 .visual-info h3 {
@@ -467,6 +603,11 @@ code {
     grid-column: 1 / -1;
   }
 
+  .controls label:first-child,
+  .controls label:nth-child(4) {
+    grid-column: 1 / -1;
+  }
+
   .filter-reset {
     width: 100%;
   }
@@ -507,6 +648,16 @@ code {
     border-radius: 0;
   }
 
+  .collection-panel {
+    align-items: stretch;
+    flex-direction: column;
+    margin-right: -10px;
+    margin-left: -10px;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+
   .visual-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 12px 10px;
@@ -524,25 +675,9 @@ code {
     font-size: 0.72rem;
   }
 
-  .mobile-filter-jump {
-    position: fixed;
+  .filter-jump {
     right: 14px;
     bottom: max(14px, env(safe-area-inset-bottom));
-    z-index: 20;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    min-width: 92px;
-    min-height: 46px;
-    padding: 0 16px;
-    border: 1px solid rgba(16, 24, 32, 0.18);
-    border-radius: 999px;
-    background: #101820;
-    color: #ffffff;
-    box-shadow: 0 12px 30px rgba(16, 24, 32, 0.22);
-    font-size: 0.9rem;
-    font-weight: 850;
-    text-decoration: none;
   }
 }
 

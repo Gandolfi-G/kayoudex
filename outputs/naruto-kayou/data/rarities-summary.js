@@ -72,7 +72,7 @@ window.NARUTO_KAYOU_RARITIES = [
   {
     "rarity": "SLR",
     "slug": "slr",
-    "count": 60,
+    "count": 120,
     "seriesCount": 5,
     "href": "./rarites/slr.html"
   },

@@ -115,7 +115,7 @@ function displayFromReference(reference) {
 }
 
 function parseReference(line) {
-  const reference = line.match(/\b(?:[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}|[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)?)\b/i)?.[0]?.trim().toUpperCase();
+  const reference = line.match(/\b(?:[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*|[A-Z]{1,4}-\d{1,3}(?:-[A-ZÀ-ÖØ-Þ0-9 ]+)*)\b/i)?.[0]?.trim().toUpperCase();
   if (!reference) return null;
   const id = reference.match(/^(?:[A-Z]{2,}\d{2}-[A-Z]{1,4}-\d{1,3}|[A-Z]{1,4}-\d{1,3})/i)?.[0]?.toUpperCase();
   return id ? { id, reference } : null;

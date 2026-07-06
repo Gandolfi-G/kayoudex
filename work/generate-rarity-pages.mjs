@@ -100,7 +100,40 @@ function pageHtml(rarity, slug, count) {
             <select id="displayFilter"></select>
           </label>
 
+          <label>
+            <span>Collection</span>
+            <select id="ownershipFilter">
+              <option value="">Toutes les cartes</option>
+              <option value="owned">Possédées</option>
+              <option value="missing">Manquantes</option>
+            </select>
+          </label>
+
           <button id="clearFilters" class="filter-reset" type="button" disabled>Réinitialiser</button>
+        </section>
+
+        <section class="collection-panel" aria-label="Gestion de la collection">
+          <div class="collection-count">
+            <strong id="ownedCards">0</strong>
+            <span>/</span>
+            <span id="collectionTotal">${count}</span>
+            <span>possédées</span>
+          </div>
+
+          <details class="backup-panel">
+            <summary>Sauvegarder / restaurer</summary>
+            <div class="backup-grid">
+              <label>
+                <span>Code de sauvegarde</span>
+                <textarea id="backupCode" rows="3" placeholder="Génère un code ou colle un code existant"></textarea>
+              </label>
+              <div class="backup-actions">
+                <button id="exportCollection" class="secondary-button" type="button">Générer</button>
+                <button id="importCollection" class="secondary-button" type="button">Importer</button>
+              </div>
+              <p id="backupStatus" class="backup-status" aria-live="polite"></p>
+            </div>
+          </details>
         </section>
 
         <section class="cards-grid-wrap" aria-label="Liste des visuels ${escapeHtml(rarity)}">
@@ -110,12 +143,13 @@ function pageHtml(rarity, slug, count) {
       </section>
     </main>
 
-    <a class="mobile-filter-jump" href="#filters" aria-label="Revenir aux filtres">Filtres</a>
+    <a class="filter-jump" href="#filters" aria-label="Revenir aux filtres">Filtres</a>
 
     <footer>
       <p>Remerciements : checklist initiale constituée à partir des informations publiques de Narutopia, puis localisée pour ce site.</p>
     </footer>
 
+    <script src="../data/card-keys.js"></script>
     <script src="../data/rarities/${slug}.js"></script>
     <script src="../rarity-page.js"></script>
   </body>
@@ -158,5 +192,8 @@ for (const item of summary) {
 }
 
 await writeFile(`${root}/data/rarities-summary.js`, `window.NARUTO_KAYOU_RARITIES = ${JSON.stringify(summary, null, 2)};\n`, "utf8");
+
+const cardKeys = cards.map((card) => String(card.reference || card.id || "").trim()).filter(Boolean);
+await writeFile(`${root}/data/card-keys.js`, `window.NARUTO_KAYOU_CARD_KEYS = ${JSON.stringify(cardKeys)};\n`, "utf8");
 
 console.table(summary.map(({ rarity, count, href }) => ({ rarity, count, href })));
