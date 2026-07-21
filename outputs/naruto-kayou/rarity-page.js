@@ -1,25 +1,27 @@
 (function () {
-  const STORAGE_KEY = "kayoudex-owned-cards-v1";
-  const BACKUP_PREFIX = "KAYOUDEX2.";
+  const STORAGE_KEY = "kayoudex-collection-v2";
+  const LEGACY_STORAGE_KEY = "kayoudex-owned-cards-v1";
   const LEGACY_BACKUP_PREFIX = "KAYOUDEX1.";
+  const BITSET_BACKUP_PREFIX = "KAYOUDEX2.";
   const cards = Array.isArray(window.NARUTO_KAYOU_RARITY_CARDS) ? window.NARUTO_KAYOU_RARITY_CARDS : [];
   const cardKeys = Array.isArray(window.NARUTO_KAYOU_CARD_KEYS) ? window.NARUTO_KAYOU_CARD_KEYS : [];
-  const cardKeyIndex = new Map(cardKeys.map((key, index) => [key, index]));
   const table = document.querySelector("#cardsTable");
   const emptyState = document.querySelector("#emptyState");
   const visibleCards = document.querySelector("#visibleCards");
   const ownedCards = document.querySelector("#ownedCards");
+  const ownedCopies = document.querySelector("#ownedCopies");
+  const gradedCards = document.querySelector("#gradedCards");
   const searchInput = document.querySelector("#searchInput");
   const seriesFilter = document.querySelector("#seriesFilter");
   const displayFilter = document.querySelector("#displayFilter");
   const ownershipFilter = document.querySelector("#ownershipFilter");
   const clearFilters = document.querySelector("#clearFilters");
-  const backupCode = document.querySelector("#backupCode");
   const backupStatus = document.querySelector("#backupStatus");
-  const exportCollection = document.querySelector("#exportCollection");
+  const downloadCollection = document.querySelector("#downloadCollection") || document.querySelector("#exportCollection");
   const importCollection = document.querySelector("#importCollection");
+  const collectionFile = document.querySelector("#collectionFile");
 
-  let ownedSet = readOwnedSet();
+  let collection = readCollection();
 
   function escapeHtml(value) {
     return String(value)
@@ -41,24 +43,31 @@
     return String(card.reference || card.id || "").trim();
   }
 
-  function readOwnedSet() {
-    try {
-      const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
-      return new Set(Array.isArray(stored) ? stored.filter(Boolean) : []);
-    } catch {
-      return new Set();
-    }
+  function clampNumber(value) {
+    const number = Number.parseInt(value, 10);
+    if (!Number.isFinite(number) || number < 0) return 0;
+    return Math.min(number, 999);
   }
 
-  function saveOwnedSet() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify([...ownedSet].sort((a, b) => a.localeCompare(b, "fr", { numeric: true }))));
+  function normalizeEntry(entry) {
+    const quantity = clampNumber(entry?.quantity);
+    const graded = clampNumber(entry?.graded);
+    return {
+      quantity: Math.max(quantity, graded),
+      graded,
+    };
   }
 
-  function bytesToBase64Url(bytes) {
-    return btoa(bytesToBinary(bytes))
-      .replaceAll("+", "-")
-      .replaceAll("/", "_")
-      .replace(/=+$/, "");
+  function hasEntry(entry) {
+    return Boolean(entry && (entry.quantity > 0 || entry.graded > 0));
+  }
+
+  function isOwned(key) {
+    return hasEntry(collection.get(key));
+  }
+
+  function sortKeys(keys) {
+    return [...keys].sort((a, b) => a.localeCompare(b, "fr", { numeric: true }));
   }
 
   function bytesToBinary(bytes) {
@@ -79,54 +88,116 @@
     return bytes;
   }
 
-  function encodeLegacyBackup() {
-    const payload = JSON.stringify({ v: 1, cards: [...ownedSet].sort((a, b) => a.localeCompare(b, "fr", { numeric: true })) });
-    return `${LEGACY_BACKUP_PREFIX}${btoa(unescape(encodeURIComponent(payload)))
-      .replaceAll("+", "-")
-      .replaceAll("/", "_")
-      .replace(/=+$/, "")}`;
-  }
-
-  function encodeBackup() {
-    if (!cardKeys.length) return encodeLegacyBackup();
-    const bytes = new Uint8Array(Math.ceil(cardKeys.length / 8));
-    for (const key of ownedSet) {
-      const index = cardKeyIndex.get(key);
-      if (index == null) return encodeLegacyBackup();
-      bytes[index >> 3] |= 1 << (index % 8);
+  function collectionFromOwnedKeys(keys) {
+    const restored = new Map();
+    for (const key of keys) {
+      if (key) restored.set(String(key), { quantity: 1, graded: 0 });
     }
-    let end = bytes.length;
-    while (end > 0 && bytes[end - 1] === 0) end -= 1;
-    return `${BACKUP_PREFIX}${bytesToBase64Url(bytes.subarray(0, end))}`;
+    return restored;
   }
 
   function decodeLegacyBackup(value) {
-    const raw = value.startsWith(LEGACY_BACKUP_PREFIX) ? value.slice(LEGACY_BACKUP_PREFIX.length) : value;
+    const clean = String(value || "").trim();
+    if (!clean) return new Map();
+    if (clean.startsWith(BITSET_BACKUP_PREFIX)) {
+      const bytes = base64UrlToBytes(clean.slice(BITSET_BACKUP_PREFIX.length));
+      const keys = [];
+      for (let index = 0; index < cardKeys.length; index += 1) {
+        if (bytes[index >> 3] & (1 << (index % 8))) keys.push(cardKeys[index]);
+      }
+      return collectionFromOwnedKeys(keys);
+    }
+    const raw = clean.startsWith(LEGACY_BACKUP_PREFIX) ? clean.slice(LEGACY_BACKUP_PREFIX.length) : clean;
     const bytes = base64UrlToBytes(raw);
     const payload = JSON.parse(decodeURIComponent(escape(bytesToBinary(bytes))));
     if (!payload || payload.v !== 1 || !Array.isArray(payload.cards)) {
       throw new Error("Code invalide");
     }
-    return new Set(payload.cards.map(String).filter(Boolean));
+    return collectionFromOwnedKeys(payload.cards);
   }
 
-  function decodeBackup(value) {
-    const clean = String(value || "").trim();
-    if (clean.startsWith(LEGACY_BACKUP_PREFIX)) {
-      return decodeLegacyBackup(clean);
-    }
-    if (!cardKeys.length) {
-      return decodeLegacyBackup(clean);
-    }
-    const raw = clean.startsWith(BACKUP_PREFIX) ? clean.slice(BACKUP_PREFIX.length) : clean;
-    const bytes = base64UrlToBytes(raw);
-    const restored = new Set();
-    for (let index = 0; index < cardKeys.length; index += 1) {
-      if (bytes[index >> 3] & (1 << (index % 8))) {
-        restored.add(cardKeys[index]);
+  function readCollection() {
+    try {
+      const payload = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+      if (payload?.version === 2 && Array.isArray(payload.cards)) {
+        const restored = new Map();
+        for (const card of payload.cards) {
+          const key = String(card.reference || card.id || "").trim();
+          const entry = normalizeEntry(card);
+          if (key && hasEntry(entry)) restored.set(key, entry);
+        }
+        return restored;
       }
+    } catch {
+      // Ignore malformed local data and try the legacy storage below.
     }
-    return restored;
+
+    try {
+      const legacy = JSON.parse(localStorage.getItem(LEGACY_STORAGE_KEY) || "[]");
+      if (Array.isArray(legacy)) {
+        const restored = collectionFromOwnedKeys(legacy);
+        if (restored.size) saveCollection(restored);
+        return restored;
+      }
+    } catch {
+      // Empty collection is safer than blocking the page.
+    }
+
+    return new Map();
+  }
+
+  function collectionPayload(source = collection) {
+    return {
+      app: "kayoudex",
+      version: 2,
+      exportedAt: new Date().toISOString(),
+      cards: sortKeys(source.keys()).map((key) => {
+        const entry = normalizeEntry(source.get(key));
+        return {
+          reference: key,
+          quantity: entry.quantity,
+          graded: entry.graded,
+        };
+      }).filter((card) => card.quantity > 0 || card.graded > 0),
+    };
+  }
+
+  function saveCollection(source = collection) {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(collectionPayload(source)));
+  }
+
+  function parseCollectionFile(payload) {
+    if (payload?.app === "kayoudex" && payload.version === 2 && Array.isArray(payload.cards)) {
+      const restored = new Map();
+      for (const card of payload.cards) {
+        const key = String(card.reference || card.id || "").trim();
+        const entry = normalizeEntry(card);
+        if (key && hasEntry(entry)) restored.set(key, entry);
+      }
+      return restored;
+    }
+    if (payload?.v === 1 && Array.isArray(payload.cards)) {
+      return collectionFromOwnedKeys(payload.cards);
+    }
+    if (Array.isArray(payload)) {
+      return collectionFromOwnedKeys(payload);
+    }
+    throw new Error("Fichier invalide");
+  }
+
+  function downloadCollectionFile() {
+    const payload = JSON.stringify(collectionPayload(), null, 2);
+    const blob = new Blob([payload], { type: "application/json" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    const date = new Date().toISOString().slice(0, 10);
+    link.href = url;
+    link.download = `kayoudex-collection-${date}.json`;
+    document.body.append(link);
+    link.click();
+    link.remove();
+    URL.revokeObjectURL(url);
+    backupStatus.textContent = "Fichier de collection téléchargé.";
   }
 
   function uniqueValues(key) {
@@ -146,8 +217,8 @@
 
   function matchesOwnership(card, ownership) {
     if (!ownership) return true;
-    const isOwned = ownedSet.has(cardKey(card));
-    return ownership === "owned" ? isOwned : !isOwned;
+    const cardOwned = isOwned(cardKey(card));
+    return ownership === "owned" ? cardOwned : !cardOwned;
   }
 
   function orientationClass(card) {
@@ -157,8 +228,19 @@
   }
 
   function updateOwnedCount() {
-    const ownedOnPage = cards.reduce((sum, card) => sum + (ownedSet.has(cardKey(card)) ? 1 : 0), 0);
+    let ownedOnPage = 0;
+    let copiesOnPage = 0;
+    let gradedOnPage = 0;
+    for (const card of cards) {
+      const entry = collection.get(cardKey(card));
+      if (!hasEntry(entry)) continue;
+      ownedOnPage += 1;
+      copiesOnPage += entry.quantity;
+      gradedOnPage += entry.graded;
+    }
     ownedCards.textContent = ownedOnPage;
+    if (ownedCopies) ownedCopies.textContent = copiesOnPage;
+    if (gradedCards) gradedCards.textContent = gradedOnPage;
   }
 
   function render() {
@@ -175,10 +257,11 @@
 
     table.innerHTML = filtered.map((card, index) => {
       const key = cardKey(card);
-      const isOwned = ownedSet.has(key);
+      const entry = normalizeEntry(collection.get(key));
+      const cardOwned = hasEntry(entry);
       return `
-        <article class="visual-card${orientationClass(card)}${isOwned ? " is-owned" : ""}" data-card-key="${escapeHtml(key)}" itemscope itemtype="https://schema.org/CreativeWork">
-          <a class="visual-link" href="${escapeHtml(card.fullImage || card.image || card.source)}" target="_blank" rel="noreferrer" aria-label="${escapeHtml(card.imageAlt || card.reference || card.id)}">
+        <article class="visual-card${orientationClass(card)}${cardOwned ? " is-owned" : ""}" data-card-key="${escapeHtml(key)}" itemscope itemtype="https://schema.org/CreativeWork">
+          <button class="visual-link card-image-toggle" type="button" data-card-key="${escapeHtml(key)}" aria-pressed="${cardOwned ? "true" : "false"}" aria-label="${escapeHtml(`${cardOwned ? "Retirer" : "Ajouter"} ${card.reference || card.id} de ma collection`)}">
             ${card.image ? `
               <img
                 src="${escapeHtml(card.image)}"
@@ -191,12 +274,23 @@
                 itemprop="image"
               >
             ` : `<span class="image-missing">Visuel indisponible</span>`}
-          </a>
+            <span class="sr-only">${cardOwned ? "Carte possédée" : "Carte non possédée"}</span>
+          </button>
           <div class="visual-info">
-            <label class="card-owned-toggle">
-              <input class="owned-checkbox" type="checkbox" value="${escapeHtml(key)}" ${isOwned ? "checked" : ""}>
-              <span>Je l'ai</span>
-            </label>
+            <div class="collection-controls">
+              <label class="card-owned-toggle">
+                <input class="owned-checkbox" type="checkbox" value="${escapeHtml(key)}" ${cardOwned ? "checked" : ""}>
+                <span>Je l'ai</span>
+              </label>
+              <label class="quantity-field">
+                <span>Total</span>
+                <input class="quantity-input" type="number" inputmode="numeric" min="0" max="999" value="${entry.quantity}" data-field="quantity" data-card-key="${escapeHtml(key)}" aria-label="Nombre d'exemplaires ${escapeHtml(card.reference || card.id)}">
+              </label>
+              <label class="quantity-field">
+                <span>Grad.</span>
+                <input class="quantity-input" type="number" inputmode="numeric" min="0" max="999" value="${entry.graded}" data-field="graded" data-card-key="${escapeHtml(key)}" aria-label="Nombre de cartes gradées ${escapeHtml(card.reference || card.id)}">
+              </label>
+            </div>
             <h3 itemprop="name">${escapeHtml(card.reference || card.id)}</h3>
             <p>
               <span class="rarity">${escapeHtml(card.rarity)}</span>
@@ -214,6 +308,43 @@
     updateOwnedCount();
   }
 
+  function updateCardElement(cardElement, key) {
+    const entry = normalizeEntry(collection.get(key));
+    const cardOwned = hasEntry(entry);
+    cardElement?.classList.toggle("is-owned", cardOwned);
+    const checkbox = cardElement?.querySelector(".owned-checkbox");
+    if (checkbox) checkbox.checked = cardOwned;
+    const quantityInput = cardElement?.querySelector(".quantity-input[data-field='quantity']");
+    const gradedInput = cardElement?.querySelector(".quantity-input[data-field='graded']");
+    if (quantityInput) quantityInput.value = entry.quantity;
+    if (gradedInput) gradedInput.value = entry.graded;
+    const imageToggle = cardElement?.querySelector(".card-image-toggle");
+    if (imageToggle) {
+      const reference = cardElement?.querySelector("[itemprop='name']")?.textContent || key;
+      imageToggle.setAttribute("aria-pressed", cardOwned ? "true" : "false");
+      imageToggle.setAttribute("aria-label", `${cardOwned ? "Retirer" : "Ajouter"} ${reference} de ma collection`);
+      const stateText = imageToggle.querySelector(".sr-only");
+      if (stateText) stateText.textContent = cardOwned ? "Carte possédée" : "Carte non possédée";
+    }
+  }
+
+  function setCollectionEntry(key, entry, cardElement) {
+    if (!key) return;
+    const normalized = normalizeEntry(entry);
+    if (hasEntry(normalized)) {
+      collection.set(key, normalized);
+    } else {
+      collection.delete(key);
+    }
+    saveCollection();
+    if (ownershipFilter.value) {
+      render();
+      return;
+    }
+    updateCardElement(cardElement, key);
+    updateOwnedCount();
+  }
+
   fillSelect(seriesFilter, "Toutes les séries", uniqueValues("series"));
   fillSelect(displayFilter, "Tous les displays", uniqueValues("display"));
   [searchInput, seriesFilter, displayFilter, ownershipFilter].forEach((control) => control.addEventListener("input", render));
@@ -228,36 +359,57 @@
 
   table.addEventListener("change", (event) => {
     const checkbox = event.target.closest(".owned-checkbox");
-    if (!checkbox) return;
-    const key = checkbox.value;
-    if (checkbox.checked) {
-      ownedSet.add(key);
-    } else {
-      ownedSet.delete(key);
-    }
-    saveOwnedSet();
-    if (ownershipFilter.value) {
-      render();
+    const quantityInput = event.target.closest(".quantity-input");
+    if (checkbox) {
+      const cardElement = checkbox.closest(".visual-card");
+      const key = checkbox.value;
+      const current = normalizeEntry(collection.get(key));
+      setCollectionEntry(key, checkbox.checked ? { ...current, quantity: Math.max(current.quantity, 1) } : { quantity: 0, graded: 0 }, cardElement);
       return;
     }
-    checkbox.closest(".visual-card")?.classList.toggle("is-owned", checkbox.checked);
-    updateOwnedCount();
+    if (quantityInput) {
+      const cardElement = quantityInput.closest(".visual-card");
+      const key = quantityInput.dataset.cardKey;
+      const current = normalizeEntry(collection.get(key));
+      const nextValue = clampNumber(quantityInput.value);
+      const next = quantityInput.dataset.field === "graded"
+        ? { quantity: Math.max(current.quantity, nextValue), graded: nextValue }
+        : { quantity: nextValue, graded: Math.min(current.graded, nextValue) };
+      setCollectionEntry(key, next, cardElement);
+    }
   });
 
-  exportCollection.addEventListener("click", () => {
-    backupCode.value = encodeBackup();
-    backupCode.select();
-    backupStatus.textContent = `Code généré (${backupCode.value.length} caractères). Garde-le pour restaurer ta collection plus tard.`;
+  table.addEventListener("click", (event) => {
+    const imageToggle = event.target.closest(".card-image-toggle");
+    if (!imageToggle) return;
+    const cardElement = imageToggle.closest(".visual-card");
+    const key = imageToggle.dataset.cardKey;
+    const current = normalizeEntry(collection.get(key));
+    setCollectionEntry(key, hasEntry(current) ? { quantity: 0, graded: 0 } : { quantity: 1, graded: 0 }, cardElement);
   });
 
-  importCollection.addEventListener("click", () => {
+  downloadCollection?.addEventListener("click", downloadCollectionFile);
+
+  importCollection?.addEventListener("click", () => {
+    collectionFile?.click();
+  });
+
+  collectionFile?.addEventListener("change", async () => {
+    const file = collectionFile.files?.[0];
+    if (!file) return;
     try {
-      ownedSet = decodeBackup(backupCode.value);
-      saveOwnedSet();
-      backupStatus.textContent = "Collection restaurée.";
+      const text = await file.text();
+      const trimmed = text.trim();
+      collection = trimmed.startsWith("{") || trimmed.startsWith("[")
+        ? parseCollectionFile(JSON.parse(trimmed))
+        : decodeLegacyBackup(trimmed);
+      saveCollection();
+      backupStatus.textContent = `Collection restaurée depuis ${file.name}.`;
       render();
     } catch {
-      backupStatus.textContent = "Code impossible à lire.";
+      backupStatus.textContent = "Fichier impossible à lire.";
+    } finally {
+      collectionFile.value = "";
     }
   });
 

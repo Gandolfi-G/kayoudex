@@ -62,19 +62,19 @@
             <strong id="ownedCards">0</strong>
             <span>/</span>
             <span id="collectionTotal">410</span>
-            <span>possédées</span>
+            <span>cartes possédées</span>
+            <span class="count-extra"><strong id="ownedCopies">0</strong> exemplaires</span>
+            <span class="count-extra"><strong id="gradedCards">0</strong> gradées</span>
           </div>
 
           <details class="backup-panel">
-            <summary>Sauvegarder / restaurer</summary>
+            <summary>Fichier de collection</summary>
             <div class="backup-grid">
-              <label>
-                <span>Code de sauvegarde</span>
-                <textarea id="backupCode" rows="3" placeholder="Génère un code ou colle un code existant"></textarea>
-              </label>
+              <p class="backup-help">Télécharge un fichier JSON pour sauvegarder ou partager ta collection, puis réimporte-le pour retrouver le total d'exemplaires et le sous-total de cartes gradées.</p>
               <div class="backup-actions">
-                <button id="exportCollection" class="secondary-button" type="button">Générer</button>
+                <button id="downloadCollection" class="secondary-button" type="button">Télécharger</button>
                 <button id="importCollection" class="secondary-button" type="button">Importer</button>
+                <input id="collectionFile" type="file" accept="application/json,.json,.txt" hidden>
               </div>
               <p id="backupStatus" class="backup-status" aria-live="polite"></p>
             </div>
