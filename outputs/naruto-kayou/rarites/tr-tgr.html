@@ -1,21 +1,21 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="fr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Naruto Kayou - TR/TGR</title>
-    <meta name="description" content="Liste compacte des cartes Naruto Kayou de rareté TR/TGR, avec visuels, références, séries et displays.">
+    <meta name="description" content="Liste compacte des cartes Naruto Kayou de raretÃ© TR/TGR, avec visuels, rÃ©fÃ©rences, sÃ©ries et displays.">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body data-page="rarity">
+  <body data-page="rarity" data-collection-key="naruto-kayou" data-card-label="Carte Naruto Kayou">
     <header class="topbar">
       <div>
-        <p class="eyebrow">Rareté Naruto Kayou</p>
+        <p class="eyebrow">RaretÃ© Naruto Kayou</p>
         <h1>TR/TGR</h1>
       </div>
       <div class="stats" aria-label="Statistiques de la liste">
         <span><strong id="totalCards">106</strong> cartes</span>
-        <span><strong id="visibleCards">106</strong> affichées</span>
+        <span><strong id="visibleCards">106</strong> affichÃ©es</span>
       </div>
     </header>
 
@@ -23,20 +23,20 @@
       <section class="list-panel" aria-labelledby="cardsTitle">
         <div class="section-head">
           <div>
-            <a class="ghost-button" href="../index.html">Toutes les raretés</a>
+            <a class="ghost-button" href="../index.html">Toutes les raretÃ©s</a>
             <h2 id="cardsTitle">Cartes TR/TGR</h2>
           </div>
-          <p id="cardsNote" class="section-note">Triées par série puis numéro</p>
+          <p id="cardsNote" class="section-note">TriÃ©es par sÃ©rie puis numÃ©ro</p>
         </div>
 
         <section id="filters" class="controls" aria-label="Filtres de recherche">
           <label class="search">
             <span>Recherche</span>
-            <input id="searchInput" type="search" placeholder="Référence, série, display..." autocomplete="off" inputmode="search">
+            <input id="searchInput" type="search" placeholder="RÃ©fÃ©rence, sÃ©rie, display..." autocomplete="off" inputmode="search">
           </label>
 
           <label>
-            <span>Série</span>
+            <span>SÃ©rie</span>
             <select id="seriesFilter"></select>
           </label>
 
@@ -49,12 +49,12 @@
             <span>Collection</span>
             <select id="ownershipFilter">
               <option value="">Toutes les cartes</option>
-              <option value="owned">Possédées</option>
+              <option value="owned">PossÃ©dÃ©es</option>
               <option value="missing">Manquantes</option>
             </select>
           </label>
 
-          <button id="clearFilters" class="filter-reset" type="button" disabled>Réinitialiser</button>
+          <button id="clearFilters" class="filter-reset" type="button" disabled>RÃ©initialiser</button>
         </section>
 
         <section class="collection-panel" aria-label="Gestion de la collection">
@@ -62,17 +62,17 @@
             <strong id="ownedCards">0</strong>
             <span>/</span>
             <span id="collectionTotal">106</span>
-            <span>cartes possédées</span>
+            <span>cartes possÃ©dÃ©es</span>
             <span class="count-extra"><strong id="ownedCopies">0</strong> exemplaires</span>
-            <span class="count-extra"><strong id="gradedCards">0</strong> gradées</span>
+            <span class="count-extra"><strong id="gradedCards">0</strong> gradÃ©es</span>
           </div>
 
           <details class="backup-panel">
             <summary>Fichier de collection</summary>
             <div class="backup-grid">
-              <p class="backup-help">Télécharge un fichier JSON pour sauvegarder ou partager ta collection, puis réimporte-le pour retrouver le total d'exemplaires et le sous-total de cartes gradées.</p>
+              <p class="backup-help">TÃ©lÃ©charge un fichier JSON pour sauvegarder ou partager ta collection, puis rÃ©importe-le pour retrouver le total d'exemplaires et le sous-total de cartes gradÃ©es.</p>
               <div class="backup-actions">
-                <button id="downloadCollection" class="secondary-button" type="button">Télécharger</button>
+                <button id="downloadCollection" class="secondary-button" type="button">TÃ©lÃ©charger</button>
                 <button id="importCollection" class="secondary-button" type="button">Importer</button>
                 <input id="collectionFile" type="file" accept="application/json,.json,.txt" hidden>
               </div>
@@ -91,7 +91,7 @@
     <a class="filter-jump" href="#filters" aria-label="Revenir aux filtres">Filtres</a>
 
     <footer>
-      <p>Remerciements : checklist initiale constituée à partir des informations publiques de Narutopia, puis localisée pour ce site.</p>
+      <p>Remerciements : checklist initiale constituÃ©e Ã  partir des informations publiques de Narutopia, puis localisÃ©e pour ce site.</p>
     </footer>
 
     <script src="../data/card-keys.js"></script>
@@ -99,3 +99,4 @@
     <script src="../rarity-page.js"></script>
   </body>
 </html>
+

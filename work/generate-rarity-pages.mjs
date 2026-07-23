@@ -62,7 +62,7 @@ function pageHtml(rarity, slug, count) {
     <meta name="description" content="Liste compacte des cartes Naruto Kayou de rareté ${escapeHtml(rarity)}, avec visuels, références, séries et displays.">
     <link rel="stylesheet" href="../styles.css">
   </head>
-  <body data-page="rarity">
+  <body data-page="rarity" data-collection-key="naruto-kayou" data-card-label="Carte Naruto Kayou">
     <header class="topbar">
       <div>
         <p class="eyebrow">Rareté Naruto Kayou</p>

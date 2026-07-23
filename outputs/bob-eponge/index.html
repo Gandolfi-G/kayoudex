@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bob l'éponge - Raretés</title>
+    <meta name="description" content="Liste visuelle des raretés Bob l'éponge avec pages dédiées, visuels légers et suivi de collection.">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Checklist visuelle</p>
+        <h1>Bob l'éponge</h1>
+      </div>
+      <div class="stats" aria-label="Statistiques de la liste">
+        <span><strong id="totalCards">393</strong> cartes</span>
+        <span><strong id="visibleCards">13</strong> raretés</span>
+      </div>
+    </header>
+
+    <main>
+      <section class="rarity-overview" aria-labelledby="rarityTitle">
+        <div class="section-head">
+          <div>
+            <a class="ghost-button" href="../../index.html">Toutes les licences</a>
+            <p class="eyebrow">Choix de la liste</p>
+            <h2 id="rarityTitle">Raretés Bob l'éponge</h2>
+          </div>
+          <p id="rarityCount" class="section-note"></p>
+        </div>
+
+        <div class="home-toolbar" aria-label="Recherche de rareté">
+          <label class="search">
+            <span>Recherche</span>
+            <input id="raritySearch" type="search" placeholder="R, SSR, ETOILE..." autocomplete="off" inputmode="search">
+          </label>
+        </div>
+
+        <div id="rarityGrid" class="rarity-grid"></div>
+        <p id="emptyState" class="empty" hidden>Aucune rareté ne correspond à cette recherche.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Chaque rareté ouvre une page dédiée pour garder le site rapide, même avec les visuels.</p>
+    </footer>
+
+    <script src="./data/rarities-summary.js"></script>
+    <script src="./index-app.js"></script>
+  </body>
+</html>

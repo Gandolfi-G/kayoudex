@@ -3,12 +3,147 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="refresh" content="0; url=./outputs/naruto-kayou/">
-    <title>Kayoudex</title>
-    <link rel="canonical" href="./outputs/naruto-kayou/">
+    <title>Kayoudex - Licences</title>
+    <meta name="description" content="Choisis une licence pour consulter les cartes, raretés et suivis de collection Kayoudex.">
+    <style>
+      :root {
+        color-scheme: light;
+        --bg: #f7f8fb;
+        --panel: #ffffff;
+        --ink: #181a20;
+        --muted: #5d6472;
+        --line: #dfe3ea;
+        --accent: #d84a3a;
+        --accent-2: #087f8c;
+        --shadow: 0 10px 28px rgba(26, 31, 42, 0.08);
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: var(--bg);
+        color: var(--ink);
+        line-height: 1.5;
+      }
+
+      .topbar {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 24px;
+        padding: 32px clamp(18px, 4vw, 56px) 24px;
+        border-bottom: 1px solid var(--line);
+        background: var(--panel);
+      }
+
+      .eyebrow {
+        margin: 0 0 6px;
+        color: var(--accent);
+        font-size: 0.78rem;
+        font-weight: 800;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(2rem, 5vw, 4.25rem);
+        line-height: 1;
+      }
+
+      main {
+        width: min(1040px, calc(100% - clamp(24px, 5vw, 64px)));
+        margin: 24px auto 40px;
+      }
+
+      .license-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+        gap: 14px;
+      }
+
+      .license-card {
+        display: grid;
+        gap: 8px;
+        min-height: 156px;
+        padding: 18px;
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        background: var(--panel);
+        color: var(--ink);
+        text-decoration: none;
+        box-shadow: 0 1px 0 rgba(26, 31, 42, 0.03);
+        transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+      }
+
+      .license-card:hover,
+      .license-card:focus-visible {
+        border-color: var(--accent);
+        box-shadow: var(--shadow);
+        transform: translateY(-1px);
+        outline: 0;
+      }
+
+      .license-name {
+        font-size: 1.65rem;
+        line-height: 1;
+        font-weight: 900;
+      }
+
+      .license-meta {
+        color: var(--accent);
+        font-weight: 850;
+      }
+
+      .license-sub {
+        color: var(--muted);
+        font-size: 0.92rem;
+        font-weight: 700;
+      }
+
+      @media (max-width: 760px) {
+        .topbar {
+          align-items: start;
+          flex-direction: column;
+          padding: 22px 16px 18px;
+        }
+
+        main {
+          width: calc(100% - 20px);
+        }
+      }
+    </style>
   </head>
   <body>
-    <p><a href="./outputs/naruto-kayou/">Ouvrir Kayoudex</a></p>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Checklist cartes</p>
+        <h1>Kayoudex</h1>
+      </div>
+    </header>
+
+    <main>
+      <section aria-labelledby="licenseTitle">
+        <p class="eyebrow">Choix de la licence</p>
+        <h2 id="licenseTitle">Sélectionne une collection</h2>
+        <div class="license-grid">
+          <a class="license-card" href="./outputs/naruto-kayou/index.html">
+            <span class="license-name">Naruto Kayou</span>
+            <span class="license-meta">Cartes, raretés et collection</span>
+            <span class="license-sub">La checklist Naruto existante.</span>
+          </a>
+          <a class="license-card" href="./outputs/bob-eponge/index.html">
+            <span class="license-name">Bob l'éponge</span>
+            <span class="license-meta">Nouvelle licence</span>
+            <span class="license-sub">Pages générées depuis les visuels locaux.</span>
+          </a>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
-

@@ -9,3 +9,5 @@ Thumbs.db
 *.tmp
 *.log
 
+# Local source images; optimized site assets live in outputs/
+work/bob-eponge/images-originales/
