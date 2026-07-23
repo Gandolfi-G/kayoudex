@@ -79,6 +79,7 @@ function pageHtml(rarity, slug, count) {
         <div class="section-head">
           <div>
             <a class="ghost-button" href="../index.html">Toutes les raretés</a>
+            <a class="ghost-button" href="../../index.html">Toutes les licences</a>
             <h2 id="cardsTitle">Cartes ${escapeHtml(rarity)}</h2>
           </div>
           <p id="cardsNote" class="section-note">Triées par série puis numéro</p>
